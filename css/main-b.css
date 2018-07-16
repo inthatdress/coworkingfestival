@@ -1,0 +1,823 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: 'Mukta+Vaani', sans-serif;
+  color: #3d3d3d;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#introduction, #newsletter, {
+  height: 20%;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  line-height: 28px;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+  /***** GRID *****/
+
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.half-width {
+  float: left;
+  width: 48%;
+}
+
+.one-third-width {
+  width: auto;
+  float: left;
+  padding-right: 20px;
+}
+
+.two-third-width {
+  width: auto;
+  float:right;
+}
+
+   /***** HEADER *****/
+
+.index {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/hero.jpg");
+  background-size: auto;
+  margin: 0 auto;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li{
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a1772;
+}
+
+header h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3a1772;
+}
+
+header h3 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3a1772;
+
+}
+
+.language {
+  color: #3d3d3d;
+  font-size: 12;
+  font-weight: 600;
+  float: left;
+  padding-left: 1em;
+}
+
+.logo {
+  font-family: "Monoton", sans-serif;
+  color: #3a1772;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-left: 1em;
+}
+
+.title {
+  font-family: "Monoton", sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  letter-spacing: 1px;
+}
+
+header img {
+  width: 55%;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  padding-bottom: 20px;
+}
+   /***** INTRODUCTION *****/
+
+#introduction h2 {
+  text-align: center;
+  color: #d741a7;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+/***** newsletter *****/
+
+#newsletter {
+  background: #d741a7;
+  padding: 20px 0 25px 0;
+}
+
+#newsletter h2 {
+  font-family: "Monoton", sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: lighter;
+  word-spacing: 10px;
+}
+
+#newsletter p {
+  color: #ffffff;
+}
+
+span a {
+  color: #e6fa30;
+}
+
+span {
+  font-weight: bolder;
+}
+
+#newsletter .btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 5px;
+  border: 0px;
+  color: #3a1772;
+  font-family: 'Mukta+Vaani', sans-serif;
+  font-size: 16px;
+  background: #e6fa30;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+
+#newsletter .btn:hover {
+  background: #e8f46d;
+  text-decoration: none;
+}
+
+#btn-padding {
+  padding: 8px 0;
+}
+
+/***** schedule.html *****/
+
+.schedule  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/schedule-banner.jpg");
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+/***** tours.html *****/
+
+.tours-banner  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/tours.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  height: 260px;
+}
+
+.tours {
+  padding: 10% 8%;
+  height: 220px;
+}
+
+#tours-gray {
+  background: #EFEFEC;
+  height: 220px;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    padding-top: 35px;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.time {
+  font-size: .8em;
+  color: #A5A5A3;
+  text-align: left;
+  padding: 0;
+  line-height: .4em;
+}
+
+.tours h2 {
+  font-family: 'Mukta+Vaani', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  line-height: .4em;
+  font-weight: 600;
+}
+
+.tours h3 {
+  color: #D741A7;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1em;
+}
+
+#tour-start-end p {
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+#tour-start-end p span {
+  font-weight: 600;
+  color: #A5A5A3;
+}
+
+#tour-start-end a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+#tour-start-end a:hover {
+  color: #D741A7;
+}
+
+/***** faq.html *****/
+
+.faq  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/faq.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+/***** contact.html *****/
+
+.contact  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/contact.jpg");
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+  /***** footer *****/
+
+footer {
+  background: #3d3d3d;
+  height: 150px;
+  padding: 20px 0 25px 0;
+}
+
+.footer-info p {
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer-info span {
+  font-weight: 600;
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: #e6fa30;
+}
+
+#right-pad {
+  padding-right: 8px;
+}
+
+p #imprint {
+  font-size: 14px;
+  font-weight: lighter;
+  color: #999;
+}
+
+#social-media {
+  float: right;
+  width: auto;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   /*
+     ##Device = Desktops
+     ##Screen = 1281px to higher resolution desktops
+   */
+
+   @media (min-width: 1281px) {
+
+     .index img, .faq img, .tours img, .contact img, .schedule img {
+       width: 20%;
+     }
+     #introduction, #newsletter, {
+       padding: 7% 1%;
+     }
+
+     .tours-banner {
+       height: 400px;
+     }
+
+     .title {
+     padding-top: 170px;
+     font-size: 4em;
+ }
+   }
+
+   /*
+     ##Device = Laptops, Desktops
+     ##Screen = B/w 1025px to 1280px
+   */
+
+   @media (min-width: 1025px) and (max-width: 1280px) {
+
+     .index img, .faq img, .tours img, .contact img, .schedule img {
+       width: 20%;
+     }
+     #introduction, #newsletter,  {
+       padding-left: 50px;
+       padding-right: 50px;
+     }
+
+     .tours-banner {
+       height: 350px;
+     }
+
+     .title {
+       padding-top:150px;
+     }
+
+   }
+
+   /*
+     ##Device = Tablets, Ipads (portrait)
+     ##Screen = B/w 768px to 1024px
+   */
+
+   @media (min-width: 768px) and (max-width: 1024px) {
+
+     .index img, .faq img, .tours img, .contact img, .schedule img  {
+       width: 27%;
+     }
+     #introduction, #newsletter, {
+       padding: 20px 50px;
+     }
+
+     .tours-banner {
+       height: 300px;
+     }
+
+     .title {
+       padding-top:120px;
+     }
+
+   }
+
+@media (min-width: 300px) and (max-width: 1024px) {
+
+#header {
+  z-index: 1;
+}
+  .one-third-width {
+    float: right;
+    padding-right: 20px;
+  }
+
+#header {
+  z-index: 1;
+  position: fixed;
+}
+  .one-third-width {
+    float: left;
+  }
+
+
+
+  .two-third-width {
+    display: block;
+    float: none;
+    height: 40px;
+    width: 100%;
+    background: url(../img/burger-icon.png) no-repeat 98% center;
+   }
+
+     nav {
+       width: 100%;
+       float: center;
+     }
+     nav ul {
+         overflow: hidden;
+         background: #d741a7;
+         height: 0;
+     }
+
+     nav ul.open {
+       height: auto;
+     }
+
+     nav ul li {
+         float: none;
+         text-align: left;
+         width: 100%;
+         margin: 0;
+         padding: 1em;
+         border-bottom: #ffffff .005em solid;
+     }
+   nav ul li a {
+        color: #ffffff;
+        padding: 10px;
+        display: block;
+        margin: 0;
+    }
+
+    .logo {
+     padding-left: 1em;
+     }
+   }
+
+
+   /*
+     ##Device = Tablets, Ipads (landscape)
+     ##Screen = B/w 768px to 1024px
+   */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+.index img, .faq img, .tours img, .contact img, .schedule img  {
+  width: 27%;
+}
+
+#introduction, #newsletter,  {
+  padding: 8% 5%;
+}
+
+.tours-banner {
+  height: 300px;
+}
+
+.title {
+  padding-top:120px;
+}
+
+}
+
+   /*
+     ##Device = Low Resolution Tablets, Mobiles (Landscape)
+     ##Screen = B/w 481px to 767px
+   */
+
+   @media (min-width: 481px) and (max-width: 767px) {
+
+    .index img, .faq img, .tours img, .contact img, .schedule img  {
+      width: 30%;
+    }
+
+    .index, .faq, .tours, .contact, .schedule {
+       background-size: cover;
+       margin: 0 auto;
+ }
+
+ #introduction, #newsletter, {
+   padding: 20px 25px;
+ }
+
+   }
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

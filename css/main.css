@@ -96,79 +96,92 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   body {
-     font-family: 'Mukta+Vaani', sans-serif;
-     color: #3d3d3d;
-     font-size: 16px;
-     text-align: center;
-     font-weight: 400;
-   }
+body {
+  font-family: 'Mukta+Vaani', sans-serif;
+  color: #3d3d3d;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+}
 
-   #introduction, #newsletter {
-       height: 20%;
+#introduction, #newsletter {
+  height: 20%;
+  padding: 15px 0;
+}
 
-   }
+h1 {
+  margin: 0;
+}
 
-   h1 {
-     margin: 0;
-   }
+p {
+  line-height: 28px;
+  padding: 0 30px;
+}
 
-   p {
-       line-height: 28px;
-       padding: 0 30px;
-     }
+a {
+  text-decoration: none;
+}
 
-     a {
-       text-decoration: none;
-     }
+.title {
+  font-family: "Monoton", sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  letter-spacing: 1px;
+}
+
 
      /***** GRID *****/
 
-     .full-width {
-       width: 100%;
-       margin: 0 auto;
-     }
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
 
-     .half-width {
-       float: left;
-       width: 50%;
-     }
+.half-width {
+  float: left;
+  width: 50%;
+}
 
-     .one-third-width {
-       width: auto;
-       float: left;
-     }
+.one-third-width {
+  width: .3333%;
+  float: left;
+  padding-right: 20px;
+}
 
-     .two-third-width {
-       width: auto;
-       float:right;
-     }
+.two-third-width {
+  width: .666%;
+  float:right;
+}
+
 
 
    /***** HEADER *****/
 
-   header {
-      background:
-        linear-gradient(to right,
-        rgba(215,65,167,.88),
-        rgba(230,250,48,.88)
-        ),
-        url("../img/hero.jpg");
-      background-size: auto;
-      margin: 0 auto;
+header {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/hero.jpg");
+    background-size: auto;
+    margin: 0 auto;
 }
-
 #nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: flex-start;
-
+    background-color: #ffffff;
 }
 
 nav {
-  float: right;
+  float: left;
 }
 
 nav ul {
@@ -177,9 +190,11 @@ nav ul {
     padding: 0;
     overflow: hidden;
 }
+
 nav ul li{
-    float: right;
+    float: left;
 }
+
 nav ul li a {
     display: block;
     text-align: center;
@@ -211,37 +226,36 @@ header h3 a {
   color: #3d3d3d;
   font-size: 12;
   font-weight: 600;
-  float: left;
   padding-left: 20px;
 }
 
-  .logo {
+.logo {
   font-family: "Monoton", sans-serif;
-   color: #3a1772;
-   font-size: 25px;
-   font-weight: lighter;
-   padding-left: 20px;
-   }
+  color: #3a1772;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-left: 20px;
+  text-align: center;
+}
 
-
-   header img {
-    width: 55%;
-    margin: 0 auto;
-    display: block;
-    clear: both;
-    padding-bottom: 20px;
-   }
+header img {
+  width: 55%;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  padding-bottom: 20px;
+}
 
    /***** INTRODUCTION *****/
 
 #introduction h2 {
-    text-align: center;
-    color: #d741a7;
-    font-size: 26px;
-    line-height: 30px;
+  text-align: center;
+  color: #d741a7;
+  font-size: 26px;
+  line-height: 30px;
 }
 
-/***** newsletter *****/
+  /***** newsletter *****/
 
 #newsletter {
   background: #d741a7;
@@ -263,6 +277,10 @@ header h3 a {
 #newsletter span {
   font-weight: 600;
 }
+
+#newsletter span a {
+  color: #e6fa30;
+     }
 
 #newsletter .btn {
   -webkit-border-radius: 0;
@@ -288,30 +306,264 @@ header h3 a {
   padding: 8px 0;
 }
 
+/***** tours *****/
+
+#tours-banner  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/tours.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  height: 260px;
+}
+
+.tours {
+  padding: 10% 8%;
+  height: 220px;
+}
+
+#tours-gray {
+  background: #EFEFEC;
+  height: 220px;
+}
+
+#map {
+  padding: 20px;
+  margin: 0 auto;
+
+}
+
+#googlemap {
+  border: 1px #BBB solid;
+}
+
+
+.time {
+  font-size: .8em;
+  color: #A5A5A3;
+  text-align: left;
+  padding: 0;
+  line-height: .4em;
+}
+
+.tours h2 {
+  font-family: 'Mukta+Vaani', sans-serif;
+  font-size: 1em;
+  text-align: left;
+  line-height: .4em;
+  font-weight: 600;
+}
+
+.tours h3 {
+  color: #D741A7;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1em;
+}
+
+#tour-start-end p {
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+#tour-start-end p span {
+  font-weight: 600;
+  color: #A5A5A3;
+}
+
+#tour-start-end a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+#tour-start-end a:hover {
+  color: #D741A7;
+}
+
+/***** schedule *****/
+
+#schedule-banner  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/schedule-banner.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  height: 260px;
+}
+
+.feature {
+  padding: 20px;
+  width: auto;
+}
+
+.feature img {
+  float: right;
+  display: block;
+
+}
+
+.feature h3 {
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #D741A7;
+  padding: 3px 20px;
+  width: 70%;
+  color: #ffffff;
+  float: left;
+  text-align: left;
+  margin-top: -27.5px;
+  letter-spacing: .05em;
+}
+
+.description p {
+  color: inherit;
+  text-align: left;
+  padding: inherit;
+  clear: both;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#drop-down {
+  margin-bottom: 50px;
+}
+
+button.accordion {
+  width: 100%;
+  background-color: #EFEFEC;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+  font-family: "Monoton", sans-serif;
+  color: #D741A7;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+button.accordion span {
+  font-family: 'Mukta+Vaani', sans-serif;
+  color: #3d3d3d;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#white {
+  background-color: white;
+
+}
+
+#white:hover {
+  background-color: #E5E5E5;
+}
+
+button.accordion:after {
+  content: '\f13a';
+  font-family: "fontawesome";
+  font-size: 1em;
+  font-weight: bolder;
+  float: right;
+}
+
+button.accordion.is-open:after {
+  content: '\f139';
+}
+
+button.accordion:hover, button.accordion.is-open {
+  background-color: #E5E5E5;
+}
+
+.accordion-content {
+  background-color: white;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.event {
+  text-align: left;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.row-1 p {
+  float: left;
+  background-color: #D0CAE0;
+  padding: 10px 0 10px 10px;
+  width: 45%;
+  margin-bottom: 10px;
+  line-height: 10px;
+}
+
+.row-1-pink p {
+  float:left;
+  background-color: #F0D9E9;
+  padding: 10px 0 10px 10px;
+  width: 45%;
+  margin-bottom: 10px;
+  line-height: 10px;
+}
+
+#place{
+  float: right;
+}
+
+.row-2 p {
+  clear: both;
+  background-color: #D0CAE0;
+  padding: 5px 10px;
+}
+
+.row-2-pink p {
+  clear: both;
+  background-color: #F0D9E9;
+  padding: 5px 10px;
+}
+
 /***** footer *****/
 
 footer {
-    background: #3d3d3d;
-    height: 150px;
-    padding: 20px 0 25px 0;
+  background: #3d3d3d;
+  height: 150px;
+  padding: 20px 0 25px 0;
 }
 
 #contact p {
-    color: #ffffff;
-    text-align: left;
+  color: #ffffff;
+  text-align: left;
 }
 
 #contact span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 #contact a {
-    text-decoration: none;
-    color: #e6fa30;
+  text-decoration: none;
+  color: #e6fa30;
 }
 
 #right-pad {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 p #imprint {
@@ -419,132 +671,234 @@ p #imprint {
    Modify as content requires.
    ========================================================================== */
 
-   /*
-     ##Device = Desktops
-     ##Screen = 1281px to higher resolution desktops
-   */
-
-   @media (min-width: 1281px) {
-
-     header img {
-       width: 20%;
-     }
-
-   }
-
-   /*
-     ##Device = Laptops, Desktops
-     ##Screen = B/w 1025px to 1280px
-   */
-
-   @media (min-width: 1025px) and (max-width: 1280px) {
-
-     header img {
-       width: 20%;
-     }
-
-   }
-
-   /*
-     ##Device = Tablets, Ipads (portrait)
-     ##Screen = B/w 768px to 1024px
-   */
-
-   @media (min-width: 768px) and (max-width: 1024px) {
-
-     header img {
-       width: 27%;
-     }
-
-   }
-
-@media (min-width: 300px) and (max-width: 1024px) {
-
-#header {
-  z-index: 1;
-  position: fixed;
-}
-  .one-third-width {
-    float: left;
-
-  }
-  .two-third-width {
-    display: block;
-    float: none;
-    height: 40px;
-    width: 100%;
-    background: url(../img/burger-icon.png) no-repeat 98% center;
-   }
-
-     nav {
-       width: 100%;
-       float: center;
-     }
-     nav ul {
-         overflow: hidden;
-         background: #d741a7;
-         height: 0;
-     }
-
-     nav ul.open {
-       height: auto;
-     }
-
-     nav ul li {
-         float: none;
-         text-align: left;
-         width: 100%;
-         margin: 0;
-     }
-   nav ul li a {
-        color: #ffffff;
-        padding: 10px;
-        display: block;
-        margin: 0;
-    }
-
-    .logo {
-     padding-left: 0;
-     }
-   }
+   /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
 
 
-   /*
-     ##Device = Tablets, Ipads (landscape)
-     ##Screen = B/w 768px to 1024px
-   */
-
-   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-     header img {
-       width: 27%;
-     }
-
-   }
-
-   /*
-     ##Device = Low Resolution Tablets, Mobiles (Landscape)
-     ##Screen = B/w 481px to 767px
-   */
-
-   @media (min-width: 481px) and (max-width: 767px) {
-
-    header img {
-      width: 30%;
-    }
-
-    header {
-       background:
-        linear-gradient(to right,
-        rgba(215,65,167,.88),
-        rgba(230,250,48,.88)
-         ),
-        url("../img/hero.jpg");
-       background-size: cover;
-       margin: 0 auto;
  }
 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+   header img {
+     width: 30%;
    }
+
+   #map {
+     padding: 20px 100px;
+     margin: 0 auto;
+   }
+
+ }
+
+ /* Medium devices (landscape tablets, 768px and below) */
+ @media only screen and (max-width: 768px) {
+
+   .two-third-width {
+     display: block;
+     float: none;
+     height: 40px;
+     width: 100%;
+     background: url(../img/burger-icon.png) no-repeat 98% center;
+   }
+
+   nav {
+      width: 100%;
+      float: center;
+   }
+
+   nav ul {
+     overflow: hidden;
+     background: #d741a7;
+     height: 0;
+   }
+
+   nav ul.open {
+     height: auto;
+   }
+
+   nav ul li {
+     float: none;
+     text-align: left;
+     width: 100%;
+     margin: 0;
+   }
+
+   nav ul li a {
+     color: #ffffff;
+     padding: 10px;
+     display: block;
+     margin: 0;
+   }
+
+   .feature {
+     /* width: 80%; */
+     margin: 0 auto;
+     height: 20em;
+   }
+
+   .description {
+     float: left;
+     /**border: 1px green solid;**/
+   }
+
+ }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+   header img {
+     width: 30%;
+   }
+   #introduction, #newsletter {
+     padding: 40px 100px;
+
+  }
+
+  #map {
+    padding: 20px 100px;
+    margin: 0 auto;
+  }
+
+  .feature {
+    width: 80%;
+    margin: 0 auto;
+    height: 12em;
+
+  }
+
+  #f-image {
+   /**border: 1px pink solid;**/
+   float: left;
+
+  }
+
+.feature img {
+   width: 100%;
+  }
+
+ #f-title {
+   float: left;
+   padding-left: 20px;
+   width: 30%
+
+ }
+
+  .feature h3 {
+    font-size: 1em;
+    font-weight: 400;
+    background-color: #D741A7;
+    padding: 8px 20px;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: .05em;
+    margin: 0 auto;
+  }
+
+  .description {
+    color: inherit;
+    text-align: left;
+    padding-left: 10px;
+    width: 40%;
+    float: left;
+    /**border: 1px green solid;**/
+  }
+ }
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+   header img {
+     width: 25%;
+   }
+
+   .feature {
+     width: 70%;
+     margin: 0 auto;
+     /**border: 1px red solid;**/
+     height: 20em;
+   }
+
+   #f-image {
+    /**border: 1px pink solid;**/
+    float: left;
+    display: inline;
+    width: 40%;
+   }
+
+.feature img {
+    width: 100%;
+   }
+
+  #f-title {
+    /**border: 1px gray solid;**/
+    float: left;
+    padding-left: 40px;
+    width: 50%;
+
+  }
+
+   .feature h3 {
+     font-size: 1em;
+     font-weight: 400;
+     background-color: #D741A7;
+     padding: 8px 20px;
+     color: #ffffff;
+     text-align: left;
+     letter-spacing: .05em;
+     margin: 0 auto;
+   }
+
+   .description {
+     color: inherit;
+     text-align: left;
+     padding-left: 40px;
+     width: 35%;
+     float: left;
+     /**border: 1px green solid;**/
+   }
+
+   .container {
+     width: 70%;
+     margin: 0 auto;
+   }
+
+   button.accordion {
+     font-size: 1.5em;
+   }
+
+   button.accordion span {
+     font-size: .8em;
+   }
+
+   .event {
+     font-size: 1em;
+   }
+
+  .row-1 p, .row-1-pink p {
+     margin-bottom: 10px;
+     width: 48.5%;
+     padding: 15px 0 10px 10px;
+   }
+
+   footer {
+     clear: both;
+   }
+
+   .description p {
+     padding: 0;
+   }
+
+ }
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+   header img {
+     width: 25%;
+   }
+
+
+ }
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
