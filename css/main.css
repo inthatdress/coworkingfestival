@@ -171,17 +171,19 @@ header {
     background-size: auto;
     margin: 0 auto;
 }
-#nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    background-color: #ffffff;
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
-nav {
-  float: left;
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.menu {
+  width: 10%;
 }
 
 nav ul {
@@ -198,7 +200,7 @@ nav ul li{
 nav ul li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 6px 16px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
@@ -213,7 +215,7 @@ header h3 {
   color: #3a1772;
 }
 
-header h3 a {
+header  a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
@@ -224,18 +226,22 @@ header h3 a {
 
 .language {
   color: #3d3d3d;
-  font-size: 12;
   font-weight: 600;
-  padding-left: 20px;
+  float: right;
+  margin: 3px 0 0 0;
+  padding: 0 10px 0 0;
+}
+
+.language a {
+  color: #3D3D3D;
 }
 
 .logo {
   font-family: "Monoton", sans-serif;
   color: #3a1772;
-  font-size: 25px;
   font-weight: lighter;
-  padding-left: 20px;
   text-align: center;
+  display: inline;
 }
 
 header img {
@@ -540,6 +546,34 @@ button.accordion:hover, button.accordion.is-open {
   padding: 5px 10px;
 }
 
+/***** contact *****/
+
+#contact-banner  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/contact-banner.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  height: 260px;
+}
+
+/***** faq *****/
+
+#faq-banner  {
+  background:
+    linear-gradient(to right,
+    rgba(215,65,167,.88),
+    rgba(230,250,48,.88)
+    ),
+    url("../img/faq-banner.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  height: 260px;
+}
+
 /***** footer *****/
 
 footer {
@@ -683,6 +717,9 @@ p #imprint {
    header img {
      width: 30%;
    }
+   .menu {
+    width: 6%;
+  }
 
    #map {
      padding: 20px 100px;
@@ -694,17 +731,11 @@ p #imprint {
  /* Medium devices (landscape tablets, 768px and below) */
  @media only screen and (max-width: 768px) {
 
-   .two-third-width {
+   .menu {
      display: block;
-     float: none;
-     height: 40px;
-     width: 100%;
+     float: left;
+    height: 40px;
      background: url(../img/burger-icon.png) no-repeat 98% center;
-   }
-
-   nav {
-      width: 100%;
-      float: center;
    }
 
    nav ul {
@@ -715,6 +746,7 @@ p #imprint {
 
    nav ul.open {
      height: auto;
+     clear:both;
    }
 
    nav ul li {
@@ -753,6 +785,23 @@ p #imprint {
    #introduction, #newsletter {
      padding: 40px 100px;
 
+  }
+
+  nav {
+  }
+
+  nav ul {
+    float: right;
+  }
+
+  .logo {
+    float: left;
+    padding: 7px 0px 0px 10px;
+
+  }
+
+  .language {
+    float: right;
   }
 
   #map {
