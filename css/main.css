@@ -96,6 +96,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
 body {
   font-family: 'Mukta+Vaani', sans-serif;
   color: #3d3d3d;
@@ -175,7 +177,8 @@ header {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+
 }
 
 .sticky + .content {
@@ -184,6 +187,11 @@ header {
 
 .menu {
   width: 10%;
+}
+
+nav {
+  background: rgba(215, 65, 167, 0.8);
+  @include transition(all .5s ease);
 }
 
 nav ul {
@@ -242,6 +250,7 @@ header  a {
   font-weight: lighter;
   text-align: center;
   display: inline;
+  @include transition(all .3s ease);
 }
 
 header img {
@@ -409,6 +418,7 @@ header img {
 .feature {
   padding: 20px;
   width: auto;
+  max-width: 50%;
 }
 
 .feature img {
@@ -767,6 +777,7 @@ p #imprint {
      /* width: 80%; */
      margin: 0 auto;
      height: 20em;
+     max-width: 50%;
    }
 
    .description {
@@ -816,10 +827,10 @@ p #imprint {
 
   }
 
-  #f-image {
+  .feature #f-image {
    /**border: 1px pink solid;**/
    float: left;
-
+   max-width: 70%;
   }
 
 .feature img {
@@ -861,10 +872,9 @@ p #imprint {
    }
 
    .feature {
-     width: 70%;
      margin: 0 auto;
-     /**border: 1px red solid;**/
      height: 20em;
+     max-width: 70%;
    }
 
    #f-image {
