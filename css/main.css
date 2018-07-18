@@ -364,11 +364,11 @@ header img {
   line-height: .4em;
 }
 
-.tours h2 {
+.tours h2, .faq h2 {
   font-family: 'Mukta+Vaani', sans-serif;
   font-size: 1em;
   text-align: left;
-  line-height: .4em;
+  line-height: 1.2em;
   font-weight: 600;
 }
 
@@ -582,6 +582,47 @@ button.accordion:hover, button.accordion.is-open {
   background-size: cover;
   margin: 0 auto;
   height: 260px;
+}
+
+.faq img {
+  padding: 10% 0 5% 0;
+  margin: 0 auto;
+}
+
+.faq {
+  padding: 0% 8% 0;
+  margin: 0 auto;
+}
+
+.faq a {
+  color: #3C2970;
+  font-weight: 600;
+
+}
+
+.faq p, .faq li {
+  text-align: left;
+  padding: 0 0 20px 0;
+  margin: 0 auto;
+  font-size: .9em;
+  line-height: 1.5em;
+  border-bottom: 1px solid #D741A7;
+}
+
+.faq li {
+  border: 0;
+  padding: 0;
+}
+
+.faq #no-border {
+  border: 0;
+  padding-bottom: 20%;
+}
+
+.faq ol{
+  border: 0;
+  list-style-position: none;
+  padding-left:inherit;
 }
 
 /***** footer *****/
@@ -945,6 +986,11 @@ p #imprint {
 
    .description p {
      padding: 0;
+   }
+
+   .faq img {
+     padding: 2% 2% 0 0;
+     float: left;
    }
 
  }
